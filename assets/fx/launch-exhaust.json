@@ -1,0 +1,129 @@
+{
+  "dimensions": 2,
+  "field": {
+    "width": 256,
+    "height": 256
+  },
+  "durationMs": 1800,
+  "fps": 24,
+  "loop": false,
+  "emitters": [
+    {
+      "name": "primary",
+      "shape": "disc",
+      "position": [
+        128.0,
+        128.0,
+        0.0
+      ],
+      "extent": {
+        "radius": 8.0,
+        "size": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "emission": {
+        "mode": "rate",
+        "rate": 160.0
+      },
+      "lifetimeMs": 1200.0,
+      "lifetimeSpread": 240.0,
+      "speed": 260.0,
+      "speedSpread": 65.0,
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "coneAngle": 18.0,
+      "forces": {},
+      "particle": {
+        "sizeCurve": {
+          "interp": "linear",
+          "from": 3.0,
+          "to": 0.05
+        },
+        "opacityCurve": {
+          "interp": "linear",
+          "from": 0.8,
+          "to": 0.0
+        },
+        "colorGradient": [
+          {
+            "color": "#ffce86",
+            "at": 0.0
+          },
+          {
+            "color": "#58656b",
+            "at": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "smoke",
+      "shape": "disc",
+      "position": [
+        128.0,
+        128.0,
+        0.0
+      ],
+      "extent": {
+        "radius": 12.0,
+        "size": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "emission": {
+        "mode": "rate",
+        "rate": 35.0
+      },
+      "lifetimeMs": 1600.0,
+      "lifetimeSpread": 0.0,
+      "speed": 100.0,
+      "speedSpread": 0.0,
+      "direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "coneAngle": 35.0,
+      "forces": {},
+      "particle": {
+        "sizeCurve": {
+          "interp": "linear",
+          "from": 2.0,
+          "to": 6.0
+        },
+        "opacityCurve": {
+          "interp": "linear",
+          "from": 0.35,
+          "to": 0.0
+        },
+        "colorGradient": [
+          {
+            "color": "#d1c6ac",
+            "at": 0.0
+          },
+          {
+            "color": "#465660",
+            "at": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "forces": {
+    "gravity": 10.0,
+    "drag": 1.2,
+    "turbulence": {
+      "amplitude": 15.0,
+      "scale": 0.08
+    }
+  },
+  "subEmitters": []
+}
